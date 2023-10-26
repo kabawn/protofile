@@ -1,0 +1,43 @@
+
+.tech{
+    font-size: 40px;
+    font-weight: bold;
+}
+.tech-icon {
+    width: 70px;
+    border-radius: 15%; /* rounded corners */
+    transition: all 0.3s ease;
+}
+
+.tech-label {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    top: 50%; /* center the label vertically */
+    left: 50%; /* center the label horizontally */
+    transform: translate(-50%, -50%); /* ensure the center is at the exact middle */
+    font-weight: bold;
+}
+
+.tech-item {
+    position: relative;
+    cursor: pointer;
+    margin: 15px; /* a bit more space between icons */
+}
+
+.tech-item:hover .tech-icon {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.15); /* subtle shadow */
+}
+
+.tech-item:hover .tech-label {
+    display: block;
+}
+
+/* Gradient background */
+.tech-section {
+    background: linear-gradient(45deg, #e0eafc, #cfdefc);
+}

@@ -1,0 +1,39 @@
+<div class="tech-section container-fluid py-5 bg-light">
+    <div class="container">
+        <h2 class="mb-5 text-center tech">Technologies & Frameworks</h2>
+        <div class="row">
+            <!-- Languages -->
+            <div class="col-md-4 d-flex flex-column align-items-center">
+                <h2 class="mb-4">Langages</h2>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div class="tech-item mx-3 my-2" *ngFor="let lang of languages">
+                        <img [src]="lang.logo" [alt]="lang.name" class="tech-icon">
+                        <span class="tech-label">{{ lang.name }}</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frameworks & Tools -->
+            <div class="col-md-4 d-flex flex-column align-items-center">
+                <h2 class="mb-4">Frameworks & Tools</h2>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div class="tech-item mx-3 my-2" *ngFor="let framework of frameworks">
+                        <img [src]="framework.logo" [alt]="framework.name" class="tech-icon">
+                        <span class="tech-label">{{ framework.name }}</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CMS -->
+            <div class="col-md-4 d-flex flex-column align-items-center">
+                <h2 class="mb-4">CMS</h2>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div class="tech-item mx-3 my-2" *ngFor="let cms of contentManagementSystems">
+                        <img [src]="cms.logo" [alt]="cms.name" class="tech-icon">
+                        <span class="tech-label">{{ cms.name }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

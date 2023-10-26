@@ -1,0 +1,19 @@
+.languages-section {
+    transition: background-color 0.3s;
+}
+
+.language-card {
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.language-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    transition: width 0.3s;
+}

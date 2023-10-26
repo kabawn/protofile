@@ -1,0 +1,28 @@
+<div class="container-fluid section">
+    <div class="container my-4">
+        <!-- Section title -->
+        <h1 class="pro">Projects</h1>
+        <div class="row">
+            <!-- Iterating over the projects array to create a card for each project -->
+            <div class="col-lg-4 col-md-6 mb-4" *ngFor="let project of projects; let i = index">
+                <!-- Wrapping each card with a routerLink to its detail page -->
+                <a [routerLink]="['/project', i]" class="text-decoration-none">
+                    <div class="card">
+                        <!-- Setting the card image background -->
+                        <div [style.background-image]="project.image ? 'url(' + project.image + ')' : null" 
+                             class="card-img-top card-img-custom" 
+                             [attr.aria-label]="project.name ? project.name : null"></div>
+                        <div class="card-body">
+                            <!-- Displaying the project name as card title -->
+                            <h5 class="card-title">{{ project.name }}</h5>
+                            <!-- Iterating over the frameworks associated with the project -->
+                            <p class="card-text">
+                                <span class="badge bg-primary me-2" *ngFor="let fw of project.frameworks">{{ fw }}</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+.navbar {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-nav li a {
+    margin-right: 20px;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
