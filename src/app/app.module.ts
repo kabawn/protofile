@@ -17,7 +17,10 @@ import { HeroSectionComponent } from './components/hero-section/hero-section.com
 import { TechSectionComponent } from './tech-section/tech-section.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { AboutMeComponent } from './about-me/about-me.component';
-import { LanguagesComponent } from './languages/languages.component'; // Added as you mentioned
+import { LanguagesComponent } from './languages/languages.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeroComponent } from './hero/hero.component';
+import { TrainSectionComponent } from './train-section/train-section.component'; // Added as you mentioned
 
 const routes: Routes = [
   { path: '', component: HomeComponent }, // Default route
@@ -40,7 +43,10 @@ const routes: Routes = [
     TechSectionComponent,
     ProjectDetailsComponent,
     AboutMeComponent,
-    LanguagesComponent // Added in the declarations array
+    LanguagesComponent,
+    FooterComponent,
+    HeroComponent,
+    TrainSectionComponent // Added in the declarations array
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,69 @@
-.navbar {
-    font-family: Arial, sans-serif;
+/* General Navbar Styling */
+
+.logo{
+    width: 150px;
+}
+.navbar.bg-dark {
+    background: linear-gradient(135deg, #2C5364, #203A43, #0F2027); /* Dark gradient from hero container */
+    border-bottom: 1px solid #444;
 }
 
-.navbar-nav li a {
-    margin-right: 20px;
+.navbar.bg-dark .navbar-brand,
+.navbar.bg-dark .navbar-toggler-icon {
+    color: #ffffff !important;  /* React.js blue as an example */
 }
 
-.navbar-brand img {
-    margin-right: 10px;
+.navbar.bg-dark .nav-link {
+    color: #ccc !important;
+    font-family: 'Courier New', monospace;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.navbar.bg-dark .nav-link:before,
+.navbar.bg-dark .nav-link:after {
+    content: '';
+    position: absolute;
+    top: 70%; /* Adjust this value based on your preference */
+    height: 2px;
+    width: 0;
+    background-color: rgb(235, 200, 0);
+    transition: all 0.3s;
+}
+
+.navbar.bg-dark .nav-link:before {
+    left: 0;
+}
+
+.navbar.bg-dark .nav-link:after {
+    right: 0;
+}
+
+.navbar.bg-dark .nav-link:hover {
+    background-color: transparent;
+    color: #61dafb !important;
+}
+
+.navbar.bg-dark .nav-link:hover:before,
+.navbar.bg-dark .nav-link:hover:after {
+    width: 100%;
+}
+
+.btn.btn-primary {
+    background-color: rgb(235, 200, 0);
+    color: #1c1e22;
+    border: none;
+    font-family: 'Courier New', monospace;
+    transition: all 0.3s;
+
+}
+
+.a{
+    text-decoration: none;
+
+}
+
+.btn.btn-primary:hover {
+    background-color: #ffffff;
+    color: #1c1e22;
 }

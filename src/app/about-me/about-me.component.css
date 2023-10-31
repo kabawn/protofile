@@ -1,78 +1,126 @@
 /* Basic styling for the timeline container */
 
 .timeline {
-    position: relative;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 40px 0;
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 150px 0;
 }
 
 .timeline::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 2px;
-    height: 100%;
-    background: #333;
-    transform: translateX(-50%);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #333;
+  transform: translateX(-50%);
 }
 
 /* Style for each event in the timeline */
 .timeline-event {
-    position: relative;
-    width: 100%;
-    padding: 20px 0;
-    clear: both;
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+  clear: both;
 }
 
 /* The circle icon for each event */
 .timeline-event .timeline-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #333;
-    z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ffffff;
+  z-index: 1;
+
 }
 
 /* The content/description for each event */
 .timeline-event .timeline-content {
-    position: absolute;
-    top: 50%;
-    width: 45%;
-    transform: translateY(-50%);
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-    padding: 10px 20px;
-    border-radius: 10px;
-    z-index: 0;
-    opacity: 0;
-    transition: opacity 0.3s, transform 0.3s;
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, #2c5364, #203a43, #0f2027);
+  color: white;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  border-radius: 10px;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
 }
 
 .timeline-event:nth-child(even) .timeline-content {
-    right: 55%;
+  right: 55%;
 }
 
 .timeline-event:nth-child(odd) .timeline-content {
-    left: 55%;
+  left: 55%;
 }
 
 /* On hover or focus of the event, reveal the content */
-.timeline-event:hover .timeline-content, 
+.timeline-event:hover .timeline-content,
 .timeline-event:focus .timeline-content {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Timeline heading (Expérience) */
 .exp {
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 60px;
-    padding: 20px;
+  margin-top: 25px;
+  font-size: 28px; /* adjust as needed */
+  font-weight: bold;
+  color: rgb(235, 200, 0); /* or any preferred color */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* giving a stronger shadow to enhance clarity */
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black background for better visibility */
+  margin: 25px auto;
+  padding: 10px 20px; /* Adjust as needed */
+  max-width: 700px; /* Adjust according to your design */  border-radius: 8px; /* rounding the edges */
+  z-index: 2; /* ensure the title is above the background but below the train */
+  text-align: center;
 }
+
+.logo-efusion {
+  background-image: url(".//..//..//assets/efuison.jpg") !important;
+  background-size: 50px 50px
+  !important;
+  background-position: center !important;
+  border: 4px solid #203a43; /* You can adjust the border width and color as needed */
+
+}
+
+.logo-freelance {
+  background-image: url(".//..//..//assets/marka.png") !important;
+  background-size: 50px 50px
+  !important;
+  background-position: center !important;
+  border: 4px solid #203a43; /* You can adjust the border width and color as needed */
+
+}
+
+.logo-deka {
+  background-image: url(".//..//..//assets/deka.png") !important;
+  background-size: 50px 50px
+  !important;
+  background-position: center !important;
+  border: 4px solid #203a43; /* You can adjust the border width and color as needed */
+
+}
+
+.logo-pm {
+  background-image: url(".//..//..//assets/pm.png") !important;
+  background-size: 50px 50px
+  !important;
+  background-position: center !important;
+  border: 4px solid #203a43; /* You can adjust the border width and color as needed */
+
+}
+
+
+

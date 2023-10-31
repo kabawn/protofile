@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #2C5364, #203A43, #0F2027);
+    overflow: hidden;
+}
+
+.highlighted-text {
+    color: rgb(235, 200, 0); /* or any color you prefer */
+    font-size: 50px;
+}
+.code-piece {
+    position: absolute;
+    top: -100px;
+    opacity: 1;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    color: #FFF;
+    white-space: pre;
+    animation: fall 12s, assemble 0.1s 3s;
+}
+
+@keyframes assemble {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-50vh);
+        opacity: 0.1;
+    }
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(calc(100vh + 100px));
+    }
+}
+
+.name {
+    font-size: 4rem;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.description {
+    font-size: 2.5rem;
+    color: #FFF;
+    text-align: center;
+    animation: formDescription 0.4s 8s forwards;
+    margin-bottom: 1rem;
+    padding: 20px;
+}
+
+@keyframes formDescription {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.typewriter {
+    border-right: .18em solid #FFF;
+}
+
+
+.subheading {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300; 
+    letter-spacing: 4.1px;
+    color: rgb(235, 200, 0);
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 3rem;
+    }
+
+    .description {
+        font-size: 2rem;
+    }
+
+    .subheading {
+        font-size: 1rem;
+    }
+}
+
+/* Profile image and its animation */
+.profile-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 50px auto;
+    z-index: 2;  /* To ensure it's above falling code pieces */
+}
+
+.profile-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.circle-animation {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border-radius: 50%;
+    border: 5px solid transparent;
+    animation: rotateCircle 8s linear infinite;
+}
+
+@keyframes rotateCircle {
+    0% {
+        transform: rotate(0deg);
+        border-color: rgb(235, 200, 0) transparent transparent transparent;
+    }
+    25% {
+        border-color: transparent rgb(235, 200, 0)transparent transparent;
+    }
+    50% {
+        border-color: transparent transparent rgb(235, 200, 0) transparent;
+    }
+    75% {
+        border-color: transparent transparent transparent rgb(235, 200, 0);
+    }
+    100% {
+        border-color: rgb(235, 200, 0) transparent transparent transparent;
+    }
+}
+
+
+.btn-outline-light.cta-linkedin,
+.btn-outline-light.cta-github,
+.btn-outline-light.cta-cv {
+    border-color: rgb(235, 200, 0);
+}
+
+.btn-outline-light.cta-linkedin:hover,
+.btn-outline-light.cta-github:hover,
+.btn-outline-light.cta-cv:hover {
+    background-color: rgb(235, 200, 0);
+    color: #FFF;
+}

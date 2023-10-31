@@ -117,7 +117,47 @@ export class DataService {
         "Tout le développement a été effectué en étroite collaboration avec le client pour s'assurer que toutes les exigences et préférences sont prises en compte."
       ],
       gitLabLink: "https://www.aimantologue.com/"
+    },
+    
+
+    {
+      name: "Marka Ecommerce Application",
+      image: "assets/markaapp.png",
+      frameworks: ["Java Spring Boot", "React Native"],
+      intro: "Développement en cours d'une application e-commerce complète pour Marka. Cette application est conçue pour offrir une solution globale pour les clients, les vendeurs, les super-administrateurs, ainsi que pour le système de livraison.",
+      features: [
+        "Mise en place d'un système robuste et évolutif avec Java Spring Boot pour la partie backend.",
+        "Conception de l'application mobile avec React Native pour assurer une expérience utilisateur optimale sur les appareils mobiles.",
+        "Intégration de divers rôles utilisateurs : client, vendeur, super-administrateur, et personnel de livraison. Chaque rôle possède des fonctionnalités et des permissions spécifiques pour une gestion efficace.",
+        "Système de panier d'achat pour les clients, permettant une sélection et un achat fluides des produits.",
+        "Zone dédiée pour les vendeurs afin qu'ils puissent gérer leurs produits, suivre les ventes et interagir avec les clients.",
+        "Tableau de bord complet pour le super-administrateur pour superviser toutes les opérations, les vendeurs, les produits, et les transactions.",
+        "Intégration d'un système de suivi des livraisons, permettant aux utilisateurs et aux livreurs de suivre l'état et l'emplacement des commandes en temps réel."
+      ],
+      additional: [
+        "L'application est actuellement en phase de production, avec des tests continus pour assurer la qualité et la stabilité.",
+        "Le développement s'effectue en étroite collaboration avec le client pour s'assurer que l'application répond à toutes ses exigences et préférences."
+      ],
+      gitLabLink: "https://gitlab.com/your_gitlab_repo_link_here"  // Replace with your actual link
+    },
+    {
+      name: "Aldeka Health Company",
+      image: "assets/dekahealth.png",
+      frameworks: ["HTML", "CSS", "JavaScript"],
+      intro: "Création d'un site web pour Aldeka Health Company, une entreprise de fournitures médicales. Il s'agit de l'un de mes premiers projets, réalisé en 2016, et le site est toujours en ligne et fonctionnel.",
+      features: [
+        "Développement du site à partir de zéro en utilisant les technologies de base du web : HTML, CSS, et JavaScript.",
+        "Conception d'une interface utilisateur intuitive pour permettre une navigation fluide et présenter efficacement les produits médicaux de l'entreprise.",
+        "Mise en œuvre de fonctionnalités interactives pour améliorer l'expérience utilisateur et faciliter la recherche de produits.",
+        "Optimisation du site pour s'assurer qu'il soit rapide, réactif et compatible avec différents navigateurs web."
+      ],
+      additional: [
+        "Ce projet représente un jalon important dans mon parcours en tant que développeur, soulignant mes compétences et mon engagement à produire un travail de qualité dès le début.",
+        "Malgré les avancées technologiques depuis 2016, le site reste fonctionnel et pertinent, témoignant de la qualité et de la durabilité du code produit."
+      ],
+      gitLabLink: "https://www.dekahealth.net/"  // Replace with the actual link to the website or its repository if it's on GitLab or another platform.
     }
+    
     
     
     

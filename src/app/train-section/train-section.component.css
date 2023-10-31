@@ -1,0 +1,130 @@
+.continer {
+  margin-top: 25px;
+}
+
+.train-section {
+  overflow: hidden;
+  position: relative;
+  height: 500px; /* Adjust to fit the train and railway */
+  padding: 50px;
+  .train {
+    position: absolute;
+    right: -550%; /* Start outside the view */
+    top: 87%;
+    bottom: 0%; /* Adjust based on where you want the railway to appear */
+
+    transform: translateY(-50%);
+    display: flex;
+    animation: trainMovement 35s linear infinite;
+    .engine,
+    .compartment {
+      position: relative;
+    }
+
+    .tech-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 60px; /* Adjust as needed */
+      width: auto;
+    }
+
+    .engine,
+    .compartment {
+      position: relative;
+      display: flex;
+      align-items: center; /* Center the tech label vertically */
+    }
+
+    .tech-label {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px; /* Adjust as needed */
+      font-weight: bold;
+      color: white; /* Adjust color if needed */
+      z-index: 2; /* Make sure label is above the car image */
+    }
+
+  }
+
+  .section-title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centering both horizontally and vertically */
+    font-size: 28px; /* adjust as needed */
+    font-weight: bold;
+    color: rgb(235, 200, 0); /* or any preferred color */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* giving a stronger shadow to enhance clarity */
+    background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black background for better visibility */
+    padding: 10px 50px; /* space around the text */
+    border-radius: 8px; /* rounding the edges */
+    z-index: 2; /* ensure the title is above the background but below the train */
+}
+}
+
+@keyframes trainMovement {
+  from {
+    right: -300%;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+.compartment:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* A slight darkening effect */
+  transition: background-color 0.3s ease;
+}
+
+.compartment:hover .tech-icon {
+  transform: translate(-50%, -50%) scale(1.1); /* Slightly enlarge icon */
+  transition: transform 0.3s ease;
+}
+
+.train .engine img,
+.train .compartment img {
+  width: 500px; /* or whatever size you prefer */
+  height: auto; /* maintains the aspect ratio */
+}
+
+.train .compartment img {
+  width: 400px; /* adjust the size as you prefer */
+  height: auto;
+}
+
+.railway {
+    position: absolute;
+    bottom: 0%; /* Adjust based on where you want the railway to appear */
+    left: 0;
+    right: 0;
+    height: 5px; /* Adjusted height for better visual representation */
+    background: 
+        repeating-linear-gradient(
+            90deg,
+            rgb(235, 200, 0), 
+            rgb(235, 200, 0) 10%, 
+            rgb(0, 0, 0) 10%, 
+            rgb(0, 0, 0) 20%
+        ); /* Alternating gold and black segments */
+    z-index: 1; /* Below the train */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+
+  }
+  
+
+.background-view {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; /* Place the background below the train */
+  background-image: url("../../assets/background2.png");
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background */
+  filter: brightness(0.75); /* Optional: Dim the background a bit */
+}

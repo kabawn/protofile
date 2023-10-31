@@ -1,5 +1,7 @@
 .languages-section {
     transition: background-color 0.3s;
+    background: linear-gradient(135deg, #2C5364, #203A43, #0F2027);
+
 }
 
 .language-card {
@@ -17,3 +19,25 @@
 .progress-bar {
     transition: width 0.3s;
 }
+
+.lan{
+    color: white;
+}
+
+.lang{
+    margin-top: 25px;
+
+    top: 20%;
+    left: 50%;
+    font-size: 28px; /* adjust as needed */
+    font-weight: bold;
+    color: rgb(235, 200, 0); /* or any preferred color */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* giving a stronger shadow to enhance clarity */
+    background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black background for better visibility */
+    margin: 25px auto;
+    padding: 10px 20px; /* Adjust as needed */
+    max-width: 700px; /* Adjust according to your design */    border-radius: 8px; /* rounding the edges */
+    text-align: center;
+    z-index: 2; /* ensure the title is above the background but below the train */}
+
+   

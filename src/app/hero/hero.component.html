@@ -1,0 +1,44 @@
+<div class="container-fluid hero-container">
+
+    <!-- Falling code snippets -->
+    <div *ngFor="let code of codes" 
+         [style.left]="code.left" 
+         [style.animation-delay]="code.animationDelay" 
+         class="code-piece">
+        {{ code.text }}
+    </div>
+
+    <!-- Central content -->
+    <div class="row justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 text-center">
+
+            <!-- Name -->
+            <h1 class="name mb-4">Osama AHLASA</h1>
+
+            <div class="profile-container">
+                <img src="assets/ava.png" alt="Osama AHLASA's Profile Picture" class="profile-image"/>
+                <div class="circle-animation"></div>
+            </div>
+
+            <!-- Profession with dynamic typewriter effect -->
+            <h2 class="description mb-3">
+                <span class="static-part">Développeur web </span>
+                <span class="typewriter" #dynamicPart></span>.
+            </h2>
+
+            <!-- Subheading -->
+            <p class="subheading mb-5">Du rêve à la réalité, je code votre vision</p>
+                
+
+            <!-- CTA buttons -->
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://www.linkedin.com/in/osamaahlasa/" target="_blank" class="btn btn-outline-light cta-linkedin">LinkedIn</a>
+                <a href="https://gitlab.com/osamahlasa" target="_blank" class="btn btn-outline-light cta-github">Gitlab</a>
+                <a href="https://drive.google.com/file/d/1qhtLzskgyRNgoKRjvjCaM8c94LV-xr6N/view?usp=sharing" target="_blank" class="btn btn-outline-light cta-cv">Télécharger CV</a>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
