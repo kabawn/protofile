@@ -157,6 +157,31 @@ export class DataService {
       ],
       gitLabLink: "https://www.dekahealth.net/"  // Replace with the actual link to the website or its repository if it's on GitLab or another platform.
     }
+
+    ,
+    {
+      name: "Bibliothèque Personnelle de Livres",
+      image: "assets/library.png",  // Mettre à jour avec l'image pertinente pour l'application de bibliothèque
+      frameworks: ["Node.js", "Angular", "TypeScript", "Docker","SQL"],  // Inclure le framework front-end sélectionné et TypeScript
+      "api": "GraphQL/REST",  // Spécifier le type d'API choisi
+      intro: "Une application JavaScript full-stack pour gérer une bibliothèque personnelle de livres. Ce projet permet aux utilisateurs de maintenir une liste de livres avec des fonctionnalités telles qu'ajouter, modifier et supprimer des livres. Il est construit en utilisant des technologies web modernes et suit les meilleures pratiques de développement logiciel.",
+      features: [
+        "L'utilisateur peut voir une liste de ses livres avec des détails tels que le titre, l'auteur, des notes, la date de dernière modification, etc.",
+        "Possibilité d'ajouter de nouveaux livres à la bibliothèque.",
+        "Fonctionnalité pour modifier les propriétés des livres.",
+        "Option pour supprimer des livres de la bibliothèque.",
+        "Fonctionnalité de recherche pour filtrer les livres par titre.",
+        "Design réactif pour une visualisation optimale sur différents appareils.",
+        "Support multi-utilisateur (facultatif, sans authentification).",
+        "Application Dockerisée pour un déploiement et une mise à l'échelle faciles."
+      ],
+      additional: [
+        "Ce projet est un témoignage de mes compétences en développement full-stack, démontrant ma capacité à travailler avec une gamme de technologies et de frameworks.",
+        "Il démontre ma capacité à construire des applications non seulement fonctionnelles mais aussi évolutives et conviviales."
+      ],
+      gitLabLink: "https://github.com/kabawn/Personal-library-full-stack"  // Remplacer par le lien réel vers le site web ou son dépôt s'il se trouve sur GitLab ou une autre plateforme.
+    }
+    
     
     
     
